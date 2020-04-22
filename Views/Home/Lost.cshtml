@@ -1,0 +1,17 @@
+@using DojoDachi.Models
+@model Dictionary<string,object>;
+
+<div>
+    <h4>
+        Fullness: @Model["Fullness"]  
+        Happiness: @Model["Happiness"]  
+        Energy: @Model["Energy"]  
+        Meals: @Model["Meals"]
+    </h4>
+</div>
+<div>
+    <h1>@Model["message"]</h1>
+</div>
+<div>
+    <a href="/reset" class="btn">Reset</a>
+</div>
